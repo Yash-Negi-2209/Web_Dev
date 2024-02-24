@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h2>Enter your details</h2>
+    <form action="backend.php">
+        <div>
+            <label for="name">Enter your Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="Reg No.">Enter Reg No.:</label>
+            <input type="text" name="myRoll" id="Reg No.">
+        </div>
+        <br>
+        <div>
+            <label for="DOB">Enter Date of Birth:</label>
+            <input type="date" name="myDOB" id="DOB">
+        </div>
+        <br>
+        <div>
+            <label for="email">Enter Email:</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="Mobile">Enter Mobile No.:</label>
+            <input type="number" name="myMobile" id="Mobile">
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Are you above 18 or Not:</label>
+            <input type="checkbox" name="myeligibility" checked id="eligible">
+        </div>
+        <br>
+        <div>
+            <label for="gender">Select your Gender:</label>
+            Male <input type="radio" name="myGender" id="gender"> Female <input type="radio" name="myGender" id="gender"> Others <input type="radio" name="myGender" id="gender">
+        </div>
+        <br>
+        <div>
+            Give Feedbacks:<br><textarea name="myFeedback" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="branch">Enter your Branch:</label>
+            <select name="myBranch" id="branch">
+                <option value="one" selected >CSE</option>
+                <option value="two">ECE</option>
+                <option value="three">IT</option>
+                <option value="four">Mech</option>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+            <input type="button" value="Clear cache">
+        </div>
+    </form>
+    
+</body>
+</html>
