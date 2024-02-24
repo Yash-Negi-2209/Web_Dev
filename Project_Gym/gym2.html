@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YashFitness.com</title>
+
+    <link rel="stylesheet" href="Project_Gym/gym.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS RESET */
+        body{
+            font-size: large;
+            font-family: 'Balsamiq Sans';
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('images/wallpaper.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+
+        .left{
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .mid{
+            /* centre krne ke lie teen cheeze hoti hai: */
+            display: block;       /*one */
+            margin: 21px auto;      /* two */
+            width: 700px;              /*  three */
+        }
+
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li{
+            display: inline-block;
+            list-style: none;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 45px;
+        }
+
+        .navbar li a:hover{
+            text-decoration: underline;
+            color:rgb(125, 211, 4)
+        }
+
+        .logo{
+            display: block;       
+            margin: 10px auto;      
+            width: 75px;;
+        }
+
+        .btn{
+            font-family: ubuntu;
+            font-weight:bold;
+            padding: 4px 14px;
+            margin: 20px;
+            background-color: rgba(51, 52, 51, 0.932);
+            color: white;
+            border: 2px solid rgb(32, 32, 32);
+            border-radius: 10px;
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+        
+            color:rgb(125, 211, 4)
+        }
+ 
+        .form {
+            font-family: 'Balsamiq Sans';
+            color: rgb(255 255 255);
+        width: auto;
+        height: 430px;
+        padding: 17px 30px;
+        margin: 98px;
+        border-radius: 20px;
+        }
+
+        .jola input{
+            font-family: 'Balsamiq Sans';
+            display: block;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+    width: 299px;
+    padding: 7px;
+    margin: 1px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+        }
+
+        #bot{
+            font-family: 'Balsamiq Sans';
+            width: 200px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #head1{
+            font-family: 'Balsamiq Sans';
+            display: block;
+            width: 458px;
+            margin: 20px auto;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <!-- left box for logo and all -->
+        <div class="left">
+            <img src="images/logofinal.png" alt="error" class="logo">
+            Welcome to Yash Fitness
+
+        </div>
+
+        <!-- mid for mav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Timings</a></li>
+                <li><a href="#">Branches</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right for some info -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+
+    </header>  
+    
+    <div class="form">
+        <h2 id="head1">Join the Best Gym of Kotdwar Now !!</h2>
+    <form action="backend.php">
+        <div class="jola">
+            <input type="text" placeholder="Enter Your Name:">
+        </div>
+        <br>
+        <div class="jola">
+            <input type="text" placeholder="Enter your Locality:" >
+        </div>
+        <br>
+        <div class="jola">
+            <input type="email" placeholder="Enter your Email:">
+        </div>
+        <br>
+        <div class="jola">
+            <input type="text" placeholder="Enter Mob No.:">
+        </div>
+        <br>
+        <div class="jola">
+            <input type="text" placeholder="Are you above 18 ?">
+        </div>
+        <br>
+        <div class="jola">
+            <input type="text" placeholder="Gender:">
+        </div>
+        <br>
+        <button class="btn" id="bot">
+            Submit
+        </button>
+    </form>
+    </div>
+</body>
+
+</html>

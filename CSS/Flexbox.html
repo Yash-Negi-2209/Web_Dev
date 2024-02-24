@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+
+    <style>
+
+        .container{
+            background-color: lightcoral;
+            border: 2px solid darkgreen;
+            margin: 20px;
+            padding: 10px;
+            width: auto;
+            height: 300px;
+            display: flex;
+            flex-direction: row;  /*by default, flex direction row hi rhta hai.*/
+            flex-wrap: wrap;       /*responsiveness ke lie*/
+            justify-content: center;
+        }
+        
+        .items{
+            height: 100px;
+            width: 100px;
+            background-color: lightpink;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h2>This is a tutorial for Flexbox</h2>
+
+    <div class="container">
+
+        <!-- emmet function use: div.classname#idname$*4 -->
+
+        <div class="items" id="item1">First box</div>
+        <div class="items" id="item2">Second box</div>
+        <div class="items" id="item3">Third box</div>
+        <div class="items" id="item4">Fourth box</div>
+    </div>
+    
+</body>
+</html>

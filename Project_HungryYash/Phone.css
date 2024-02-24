@@ -1,0 +1,181 @@
+
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+
+
+#navbar ul a{
+    padding: 0px 4px;
+    padding-bottom: 8px;
+    font-style: 1px;
+}
+
+/* Home Section */
+#home{
+    
+    padding: 3px 28px;
+    height: 370px;
+}
+#home::before{
+    height: 480px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services */
+#Ser{
+    flex-direction: column;
+}
+
+#Ser .box{
+    padding: 16px;
+    margin-bottom: 20px;
+    margin: 10px;
+    display: block;
+}
+
+#Ser .box img{
+    border: 2px solid black;
+    border-radius: 80px;
+    height: 110px;
+    margin: auto;
+    display: block;
+}
+
+/* Clients */
+.Clients{
+    position: relative;
+    overflow: hidden;
+}
+.Clients::before{
+    content: "";
+    background: url(CherriesBG.jpg) no-repeat center center/cover;         
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#Cnt{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#Cnt .logoBoxes img{
+    border: 2px solid black;
+    border-radius: 23px;
+    width: 19px;
+    margin: 18px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Contact Us */
+.Contact{
+    position: relative;
+}
+.Contact::before{
+    content: "";
+    background: url(ContactBG.jpg) no-repeat center center/cover;         
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jola input{
+    font-family: 'Bree Serif', serif;
+    display: block;
+    font-size: 12px;
+    color: black;
+    text-align: justify;
+    width: 210px;
+    padding: 5px;
+    margin: 0px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    font-family: 'Bree serif', serif;
+    font-size: x-small;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* Utility Function */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-Secondary{
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    padding-top: 35px;
+}
+.h-Secondary2{
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.h-Tertiary{
+    font-size: 1.2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+.btn {
+    font-family: 'Bree Serif, serif';
+    font-weight: bold;
+    padding: 5px 26px;
+    margin: 17px;
+    background-color: rgb(0 0 0 / 52%);
+    color: white;
+    border: 2px solid rgb(32, 32, 32);
+    border-radius: 13px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.659);
+    color: white;
+}
+
+#Ser .box:hover{
+    background:url(bg_final.jpg);
+    color: white;
+}
+
+#bot{
+    font-family: 'Bree Serif', serif;
+    width: 103px;
+    display: block;
+    margin-top: -3px;
+    margin-bottom: 15px;
+}

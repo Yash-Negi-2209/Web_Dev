@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(214, 151, 214);
+}
+
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;    /*isse andar jo bhi hai vo iske andar hi rhega, bahar nahi niklega*/
+}
+
+#paneltop{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(136, 58, 136);
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    color: rgb(136, 58, 136);;
+    font-weight: 900;
+    padding: 10px;
+    font-size: large;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#panelbottom{
+    display: flex;
+    flex-wrap: wrap;      /*isse next line pe items ko jaana enable krdete hai, by default ye value no-wrap pe rhti hai jiske kaaran ek hi line pe sab adjust hota hai*/
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: calc(100% - 100px);     /*puure panel ki height minus top ki height, '%' se 'px' minus nahi hota par calc function se hojata hai*/ 
+    padding: 15px;
+}
+
+.bubble{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(136, 58, 136);;
+    font-weight: 500;
+    font-size: large;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(87, 17, 87);
+}
